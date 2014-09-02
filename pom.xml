@@ -72,6 +72,7 @@
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
                                     <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/dist" />
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/src/" includes="less/"/>
                                 </move>
                             </target>
                         </configuration>
