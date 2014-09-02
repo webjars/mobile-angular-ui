@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>mobile-angular-ui</artifactId>
-    <version>1.1.0-beta.29-1-SNAPSHOT</version>
+    <version>1.1.0-beta.29-1</version>
     <name>Mobile Angular UI</name>
     <description>WebJar for Mobile Angular UI</description>
     <url>http://webjars.org</url>
@@ -50,7 +50,7 @@
         <url>http://github.com/webjars/mobile-angular-ui</url>
         <connection>scm:git:https://github.com/webjars/mobile-angular-ui.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/mobile-angular-ui.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>mobile-angular-ui-1.1.0-beta.29-1</tag>
     </scm>
     
     <build>
@@ -72,7 +72,7 @@
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
                                     <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/dist" />
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/src/" includes="less/"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/src/" includes="less/" />
                                 </move>
                             </target>
                         </configuration>
