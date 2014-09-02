@@ -25,6 +25,9 @@
             {
                 "paths": {
                     "mobile-angular-ui": "js/mobile-angular-ui"
+                }, 
+                "shim": {
+                    "mobile-angular-ui": ["angular"]
                 }
             }
         </requirejs>
